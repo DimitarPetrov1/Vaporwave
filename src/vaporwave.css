@@ -1,0 +1,98 @@
+/* No fallbacks yet */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.circle {
+  position: relative;
+  height: 520px;
+  width: 520px;
+  border-radius: 50%;
+  background: #ffe2fc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe2fc), to(#f202ff));
+  background: linear-gradient(to bottom, #ffe2fc 0%, #f202ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe2fc', endColorstr='#f202ff', GradientType=0);
+}
+
+.circle img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 85%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  pointer-events: none;
+}
+
+.container__lines {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all linear;
+  transition: all linear;
+  -webkit-animation: waves 24s linear infinite;
+          animation: waves 24s linear infinite;
+}
+
+.line {
+  background: black;
+  margin: 20px 0;
+  width: 100%;
+  height: 12px;
+  pointer-events: none;
+}
+
+@-webkit-keyframes waves {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 1000px;
+  }
+}
+
+@keyframes waves {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 1000px;
+  }
+}
+/*# sourceMappingURL=vaporwave.css.map */
